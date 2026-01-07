@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>2026 春季就業博覽會</title>
+<style>
+  :root{
+    --main:#a14239;     /* ✅ 你的粉紅主色（可改成你要的色碼） */
+    --bg:#f9f9f9;
+    --soft:#f6e6e4;     /* 淡粉底（原本 e0e6ec / eef1f4 的位置） */
+    --soft2:#fbf1f0;    /* 更淡的底 */
+    --text:#333;
+  }
+
+  body { font-family: 'Noto Sans TC', sans-serif; background: var(--bg); margin:0; padding:20px; max-width:960px; margin:auto; color:var(--text); }
+
+  .zone-buttons { display:flex; justify-content:center; flex-wrap:wrap; gap:12px; margin:20px 0; }
+  .zone-buttons a { padding:8px 20px; background:var(--main); color:#fff; text-decoration:none; border-radius:999px; font-size:14px; }
+
+  .section-title { font-size:22px; font-weight:bold; color:var(--main); margin:40px 0 20px; }
+
+  .zone-section { display:none; }
+  .zone-section.active { display:block; }
+
+  .card-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+
+  .card { background:white; padding:8px 16px 12px; border-left:6px solid var(--main); border-radius:10px; box-shadow:0 1px 6px rgba(0,0,0,0.06); display:flex; flex-direction:column; max-height:320px; }
+
+  .company-title { color: var(--main); font-weight:700; }
+
+  .scroll-content { overflow-y:auto; flex-grow:1; padding-right:6px; line-height:1.8; font-size:15px; }
+
+  .tag { display:inline-block; background-color:var(--soft); color:var(--main); font-size:14px; border-radius:999px; padding:4px 12px; margin-top:8px; margin-right:6px; }
+
+  .booth-tag { background:var(--soft); color:var(--main); border-radius:999px; padding:4px 10px; font-size:13px; margin-left:10px; font-weight:700; }
+
+  .industry-tag { background:var(--main); color:white; border-radius:999px; padding:4px 12px; font-size:13px; margin-top:8px; display:inline-block; width:fit-content; }
+
+  .website-button { display:block; margin:10px auto 0 auto; padding:8px 16px; background-color:var(--main); color:#fff; text-decoration:none; border-radius:6px; font-size:14px; font-weight:500; width:fit-content; }
+
+  .top-btn { position:fixed; bottom:20px; right:20px; background:var(--main); color:white; padding:10px 15px; border-radius:999px; text-decoration:none; font-size:14px; }
+
+  @media (max-width: 720px) {
+    .card-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+</head>
+<body>
+
+<div style="font-size:24px;font-weight:700;color:var(--main);border-left:6px solid var(--main);padding-left:12px;margin-bottom:24px;">2026 春季就業博覽會</div>
+<div id="infoBar" style="display:flex;align-items:center;background-color:var(--soft2);padding:12px 20px;border-radius:12px;margin-bottom:10px;font-size:16px;color:#333;gap:12px;">
+  <div style="background:var(--main);color:white;padding:8px 16px;border-radius:999px;font-weight:bold;">3/19（四）</div>
+  <div>地點：本校校園</div>
+</div>
+
+<div class="zone-buttons">
+  <a href="#" onclick="showZone('A')">A區</a>
+  <a href="#" onclick="showZone('B')">B區</a>
+  <a href="#" onclick="showZone('C')">C區</a>
+  <a href="#" onclick="showZone('D')">D區</a>
+  <a href="#" onclick="showZone('E')">E區</a>
+</div>
+
+
+<div id="zone-A" class="zone-section active">
+  <div class="section-title">A區</div>
+  <div class="card-grid">
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">台灣積體電路製造股份有限公司</h3>
+          <span class="booth-tag">A1</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">台積公司是全世界最大的專業積體電路製造服務公司，並於民國七十六年成立於台灣新竹科學工業園區，並開創了專業積體電路製造服務商業模式。領先的技術、卓越的製造，以及對於研發及產能投資的持續承諾，讓我們能夠在高效能運算、智慧型手機、物聯網、車用電子與消費性電子產品等半導體領域掌握商機。</div>
+        <a href="https://www.tsmc.com" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">世界先進積體電路股份有限公司</h3>
+          <span class="booth-tag">A4</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">世界先進公司是一家台灣的專業晶圓代工廠，專注於提供特殊積體電路製造服務。成立於1994年，最初以DRAM生產為主，後於2000年轉型為晶圓代工公司，並於2004年成為純粹的晶圓代工廠。公司擁有五座八吋晶圓廠，分別位於台灣和新加坡，並提供高壓、邏輯、混合訊號等多元製程技術。</div>
+        <a href="https://talent.vis.com.tw" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">台塑企業</h3>
+          <span class="booth-tag">A6</span>
+        </div>
+        <div class="industry-tag">化學材料製造業</div>
+        <div class="scroll-content">台塑企業的經營理念，是以「勤勞樸實、實事求是」的態度追求一切事物的合理化，並且以「止於至善」做為最終的努力目標。由於外在環境不斷在進步，所以「至善」其實是一種理想境界，永遠都有待努力追求，形成不斷提升企業經營體質及績效的原動力；我們持續以「奉獻社會」做為自我鞭策的成長動力，達到「永續經營」的目標。</div>
+        <a href="https://hr.fpg.com.tw/j2hr2p/home/IndexHomeController.do" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">資訊工程系</div><div class="tag">化學工程與生物科技系</div><div class="tag">資訊與財金管理系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">南亞科技股份有限公司</h3>
+          <span class="booth-tag">A8</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">公司簡介
+ 南亞科技股份有限公司成立於1995年3月4日，致力於DRAM（動態隨機存取記憶體）之研發、設計、製造與銷售。南亞科技總部設立於新北市泰山區南林科學園區，並於美國、歐洲、日本、中國設立海外行銷據點。南亞科技長期致力培育關鍵技術研發團隊，落實綠色科技，是全球第四大的DRAM公司。</div>
+        <a href="https://www.104.com.tw/company/152cvzls?keyword=%E8%87%AA%E5%8B%95%E5%8C%96&page=1&pageSize=20&order=8&asc=0#info06" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">資訊工程系</div><div class="tag">材料科學與工程研究所</div><div class="tag">化學工程與生物科技系</div><div class="tag">材料及資源工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">友達光電股份有限公司</h3>
+          <span class="booth-tag">A9</span>
+        </div>
+        <div class="industry-tag">其他電子零組件製造業</div>
+        <div class="scroll-content">我們是友達光電，一家以以技術與創新為動力，以顯示科技為核心，於智慧移動、製造、企業、教育、零售、醫療、照護與綠色能源等各領域，提供先進技術含量的產品和解決方案服務。</div>
+        <a href="https://www.auo.com/zh-TW" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">資訊工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">友達智慧移動股份有限公司</h3>
+          <span class="booth-tag">A11</span>
+        </div>
+        <div class="industry-tag">其他電子零組件製造業</div>
+        <div class="scroll-content">友達智慧移動為友達光電集團公司。友達智慧移動持續研發製造、拓展智慧移動解決方案，與全球客戶和合作夥伴保持密切關係；建置涵蓋產品研發、製造及銷售等一條龍式協作平台，實現功能整合、資源共用和流程一致性，加速開發，全力投入智慧移動事業發展機會。</div>
+        <a href="https://www.auo.com/zh-TW" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">車輛工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">化學工程與生物科技系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">和泰汽車股份有限公司</h3>
+          <span class="booth-tag">A13</span>
+        </div>
+        <div class="industry-tag">汽車及其零件製造業</div>
+        <div class="scroll-content">和泰汽車為全球知名汽車品牌TOYOTA、Lexus、HINO之台灣總代理，市佔率連續多年均為車市No.1，獲利亦為台灣汽車業之冠。
+ 近年來在MaaS的趨勢下，從共享服務切入，以iRent、yoxi、和泰Pay、去趣APP等新事業，推展全新移動旅運服務。</div>
+        <a href="https://www.104.com.tw/company/1hrmizk?" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">車輛工程系</div><div class="tag">資訊與財金管理系</div><div class="tag">工業工程與管理系</div><div class="tag">經營管理系</div><div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">台泥企業團</h3>
+          <span class="booth-tag">A15</span>
+        </div>
+        <div class="industry-tag">其他製造業</div>
+        <div class="scroll-content">台泥企業團擁有27個主要子公司、跨足11種產業及14國主力市場，以「低碳建材、資源循環、綠色能源」作為三大核心事業。
+ 台泥以循環經濟為脈絡、綠色能源為動力，透過科技與文化的交融，鋪展出未來永續發展的可能性。我們不只是生產者，更是自然的協作者，將每一塊水泥化為承諾，連結人類與環境，打造新文明的基石。</div>
+        <a href="https://www.tccgroupholdings.com/index.php" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">資訊工程系</div><div class="tag">土木工程系</div><div class="tag">材料科學與工程研究所</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">台灣山葉機車工業股份有限公司</h3>
+          <span class="booth-tag">A17</span>
+        </div>
+        <div class="industry-tag">其他運輸工具及其零件製造業</div>
+        <div class="scroll-content">台灣山葉機車秉持守護環境的理念，持續投入精密科技，追求人、車、環境的和諧共存，打造更舒適的生活品質。提供高品質商品與服務是我們一貫的宗旨，並以創新、用心、安心、貼心四大核心徹底落實經營，創造超越顧客期待的價值，持續履行企業的社會責任。</div>
+        <a href="https://www.yamaha-motor.com.tw/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">機械工程系</div><div class="tag">車輛工程系</div><div class="tag">電機工程系</div><div class="tag">工業工程與管理系</div><div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">NSW Inc.</h3>
+          <span class="booth-tag">A19</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">Founded in 1966, we creates an innovative future with IoT & AI Solutions, including embedded applications, automotive, LSI logic circuit design, etc.</div>
+        <a href="https://www.nsw.co.jp/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">資訊工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">壹一壹一科技股份有限公司</h3>
+          <span class="booth-tag">A20</span>
+        </div>
+        <div class="industry-tag">其他製造業</div>
+        <div class="scroll-content">壹一壹一科技股份有限公司是一家專注於人力資源服務的創新企業。公司擁有龐大的人才資料庫，包含數百萬筆全職、兼職及工讀人才資料，為企業提供精準的求才服務。同時，公司也為求職者提供豐富的職缺資訊，涵蓋各種工作類型，並設有多個專業求職專區，如打工、家教、轉職等，滿足不同需求。</div>
+        <a href="https://www.1111.com.tw/267299/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">資訊工程系</div><div class="tag">資訊與財金管理系</div><div class="tag">經營管理系</div><div class="tag">互動設計系</div><div class="tag">文化事業發展系</div><div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">美超微電腦(股)公司</h3>
+          <span class="booth-tag">A21</span>
+        </div>
+        <div class="industry-tag">電腦及其週邊設備製造業</div>
+        <div class="scroll-content">美超微電腦成立於1993年，總部位於美國聖荷西，在台設有亞太營運中心。專注高效能、節能伺服器與儲存、網通解決方案，應用於資料中心、雲端、AI及邊緣運算。以綠色運算為核心，結合模組化設計與自主製造，提供高效、低耗能的IT基礎架構。</div>
+        <a href="https://www.104.com.tw/company/5uisvbc?jobsource=google" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">能源與冷凍空調工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">資訊工程系</div><div class="tag">資源工程研究所</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div id="zone-B" class="zone-section">
+  <div class="section-title">B區</div>
+  <div class="card-grid">
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">廣達電腦股份有限公司</h3>
+          <span class="booth-tag">B1</span>
+        </div>
+        <div class="industry-tag">電腦及其週邊設備製造業</div>
+        <div class="scroll-content">廣達電腦成立於1988年，為全球Fortune 500 大公司之一，也是全球筆記型電腦專業研發設計製造的領導廠商。從全球最大的筆電設計製造跨足到雲端，持續創新並積極進行AI與5G布局，涉足智慧家庭、智慧醫療、智慧交通及智慧製造，廣達最珍貴的資產「人才」將是未來再創新局的關鍵！</div>
+        <a href="https://hr.quantatw.com" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">能源與冷凍空調工程系</div><div class="tag">電機工程系</div><div class="tag">資訊工程系</div><div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">義隆電子股份有限公司</h3>
+          <span class="booth-tag">B3</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">義隆電子為全球人機介面晶片領導廠商，專精於觸控螢幕控制器、觸控板模組、指紋/人臉辨識及AI影像辨識解決方案。創新產品廣泛應用智慧手機、平板、筆電及消費電子，市佔率穩居前茅。
+ 我們用一顆顆小晶片，改變全世界滑鼠、鍵盤、指紋解鎖的體驗，正火力全開進軍車用ADAS與Edge AI。</div>
+        <a href="https://service.emc.com.tw/eREC/JobList.aspx" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">機械工程系</div><div class="tag">車輛工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">資訊工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">英屬維京群島商太古國際汽車股份有限公司台灣分公司</h3>
+          <span class="booth-tag">B4</span>
+        </div>
+        <div class="industry-tag">汽車及其零件製造業</div>
+        <div class="scroll-content">太古汽車隸屬英國太古集團(Swire Group)，於全台銷售 Volkswagen 自用與商用車、Volvo 與 Renault 卡車及巴士、Harley-Davidson、KTM、Royal Enfield、Vespa 等機車，並於高雄經銷 Mercedes-Benz，營業版圖與服務項目持續擴張</div>
+        <a href="https://www.104.com.tw/company/d1ywsy8?jobsource=google" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">車輛工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">明基佳世達集團</h3>
+          <span class="booth-tag">B6</span>
+        </div>
+        <div class="industry-tag">電腦及其週邊設備製造業</div>
+        <div class="scroll-content">成立於1984年，為橫跨資訊產業、醫療事業、智慧解決方案及網路通訊事業之全球科技集團，入選為湯森路透「全球科技百強」領導者、「亞洲最佳企業雇主」及「台灣十大永續典範企業」。在液晶顯示器和投影機等領域居全球領導地位，在智慧解決方案提供智慧企業、智慧零售、智慧工廠等六大場域之自動化、智慧化解決方案。</div>
+        <a href="https://www.104.com.tw/company/5qkelsg" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">資訊工程系</div><div class="tag">工業工程與管理系</div><div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">光寶科技股份有限公司</h3>
+          <span class="booth-tag">B8</span>
+        </div>
+        <div class="industry-tag">其他製造業</div>
+        <div class="scroll-content">光寶科技(LITEON Technology)成立於 1975 年，不僅是台灣首家上市的電子公司，也是台灣 LED 產業的先驅。近半世紀以來，我們憑藉卓越的光電半導體與電源管理技術，立基全球市場。</div>
+        <a href="https://www.liteon.com/zh-tw/hrimg/internship" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">英業達股份有限公司</h3>
+          <span class="booth-tag">B12</span>
+        </div>
+        <div class="industry-tag">電腦及其週邊設備製造業</div>
+        <div class="scroll-content">英業達成立於1975年，在亞洲、北美及歐洲皆設有營運據點，專注於筆記型電腦、消費性電子與伺服器產品的研發和製造，近年也持續朝車用電子、AI及元宇宙等高科技產品領域邁進。
+ 從研發、設計、生產、到配送及技術支援，以顧客需求為導向、全球營運為考量，從軟體到硬體，致力於提供全方位的產品設計及解決方案服務！</div>
+        <a href="https://career.inventec.com/tw" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">資訊工程系</div><div class="tag">資訊與財金管理系</div><div class="tag">工業工程與管理系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">中鼎工程股份有限公司</h3>
+          <span class="booth-tag">B13</span>
+        </div>
+        <div class="industry-tag">建築及工程技術服務業</div>
+        <div class="scroll-content">CTCI中鼎集團成立於1979年，為國際級的統包工程集團，致力提供全球最值得信賴的工程服務。服務範圍包括環境、煉油、石化、電力、交通、一般工業、高科技設施、液化天然氣等工程領域。CTCI秉持不斷創新突破及對品質絕不妥協的精神，積極實踐「最值得信賴的全球工程服務團隊」願景。</div>
+        <a href="https://www.ctci.com" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">能源與冷凍空調工程系</div><div class="tag">電機工程系</div><div class="tag">土木工程系</div><div class="tag">環境工程與管理研究所</div><div class="tag">工業工程與管理系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">中華汽車工業股份有限公司</h3>
+          <span class="booth-tag">B15</span>
+        </div>
+        <div class="industry-tag">汽車及其零件製造業</div>
+        <div class="scroll-content">中華汽車成立於 1969 年，是台灣領先汽車製造商。公司涵蓋整車設計、零件開發、生產、銷售與售後服務，並以自主品牌 CMC 為主，合作 MITSUBISHI、MG、FUSO 提供多元產品。積極投入電動車、智慧座艙及先進駕駛輔助系統研發，秉持「和諧、創新、卓越、永續」理念，多次獲國內外品質與永續獎肯定</div>
+        <a href="https://www.104.com.tw/company/k2edtx4" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">車輛工程系</div><div class="tag">電機工程系</div><div class="tag">化學工程與生物科技系</div><div class="tag">工業工程與管理系</div><div class="tag">經營管理系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">致茂電子股份有限公司</h3>
+          <span class="booth-tag">B16</span>
+        </div>
+        <div class="industry-tag">電力設備製造業</div>
+        <div class="scroll-content">成立於1984年，以自有品牌”Chroma”行銷全球，以精密量測及智動化全方位解決方案引領新興科技實現創新，主要市場應用包括AI、半導體/IC、電動車、電力電子、被動元件等領域。每年投入大量研發資源確保其領先關鍵技術及高度整合能力於光學、機械、電子、溫控及軟體，達到永續經營的目標。</div>
+        <a href="https://www.104.com.tw/company/4cgulm0" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">車輛工程系</div><div class="tag">能源與冷凍空調工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">力晶積成電子製造股份有限公司</h3>
+          <span class="booth-tag">B17</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">【整合邏輯和記憶體技術，提供客製化服務】DRAM與NAND Flash記憶體、邏輯與驅動IC、電源管理晶片、CMOS影像感測等積體電路設計、代工與銷售。【發展晶圓堆疊技術，製成3D AI加速器】 為邏輯晶片與記憶體間提供大量連接通道，降低資料存取功耗及提升運算效能，建構具競爭力的AI晶片代工平臺。</div>
+        <a href="https://www.powerchip.com/zh-tw/join/activityinfo/manufacturing" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">分子科學與工程系</div><div class="tag">材料科學與工程研究所</div><div class="tag">化學工程與生物科技系</div><div class="tag">材料及資源工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">東元電機</h3>
+          <span class="booth-tag">B19</span>
+        </div>
+        <div class="industry-tag">電力設備製造業</div>
+        <div class="scroll-content">東元電機創立於西元1956年，初期從事馬達生產，至今東元集團已跨入重電、家電、資訊、通訊、電子關鍵零組件、基礎工程建設等多面向的發展領域，更積極參與國家重大工程建設，目前事業版圖橫跨全球五大洲四十餘國、百餘城市。【願景】成為全球電氣化、智能化與綠色能源的核心發展驅動者</div>
+        <a href="https://www.104.com.tw/company/57ewf0y" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">電力設備製造業</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">東京威力科創股份有限公司</h3>
+          <span class="booth-tag">B21</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">TEL (Tokyo Electron Limited) 成立於1963年，為全球知名半導體設備商。1996年於台灣設立分公司，以強化客戶服務並貫徹Customer Satisfaction理念。期待具身份認同及世界觀的優秀人才，願以錦繡前程為長期規劃者，加入我們共創未來！</div>
+        <a href="http://www.tel.com/tet/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">車輛工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">材料科學與工程研究所</div><div class="tag">化學工程與生物科技系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">鴻晶科技股份有限公司</h3>
+          <span class="booth-tag">B23</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">鴻晶科技成立於2001年7月，由鴻海集團企業併購，新鴻晶延續並擴展原IC設計服務到IC設計ODM，成為鴻海ODM服務擴充到IC設計的領域，藉此也將鴻晶科技帶進智能時代之主流IC設計市場。</div>
+        <a href="https://www.104.com.tw/company/1a2x6biryr?jobsource=index_s" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">資訊工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">鴻海精密工業股份有限公司</h3>
+          <span class="booth-tag">B24</span>
+        </div>
+        <div class="industry-tag">其他製造業</div>
+        <div class="scroll-content">鴻海於1974年肇基於台灣，以模具為根基，逐漸發展為高科技服務企業，透過集團化經營模式，於電子代工服務領域（EMS）排名全球第一，市佔率超過四成。近年來，集團積極並投入「電動車、數位健康、機器人」三大新興產業以及「人工智慧、半導體、新世代通訊技術」三項新技術領域，成為全方位智慧生活提供者。</div>
+        <a href="https://www.honhai.com/zh-tw/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">不限科系</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div id="zone-C" class="zone-section">
+  <div class="section-title">C區</div>
+  <div class="card-grid">
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">仁寶電腦工業股份有限公司</h3>
+          <span class="booth-tag">C3</span>
+        </div>
+        <div class="industry-tag">電腦及其週邊設備製造業</div>
+        <div class="scroll-content">仁寶電腦創立於1984年，為全球5C整合解決方案領導廠商，業務涵蓋通訊、數位媒體、智慧型裝置、車用電子與網通產品。秉持「創新、和諧、超越」精神，仁寶以卓越研發與營運實力穩居世界500強，並於中國、越南、美國、巴西、波蘭及墨西哥設有據點，持續強化全球運籌與產品創新，屢獲國際大獎肯定。</div>
+        <a href="https://www.104.com.tw/company/9qzgnew?jobsource=bing" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">資訊工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">國家中山科學研究院</h3>
+          <span class="booth-tag">C4</span>
+        </div>
+        <div class="industry-tag">其他製造業</div>
+        <div class="scroll-content">國家中山科學研究院以發展前瞻國防科技為使命，我們致力為國家研發部署戰備能量，並躋身世界先進技術之林。我們所具備的關鍵技術能量，正逐步應用至智慧科技、機電運輸、材料化工、生技醫藥等民生產業，實質促進臺灣產業升級。</div>
+        <a href="https://www.ncsist.org.tw/csistdup/jobs/page03.html" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">香港商聯寶電腦有限公司台灣分公司</h3>
+          <span class="booth-tag">C6</span>
+        </div>
+        <div class="industry-tag">電腦及其週邊設備製造業</div>
+        <div class="scroll-content">為聯想子公司，成立於2011年，主要業務為個人電腦、伺服器和智慧物聯設備等，致力成為AI時代行業領先的智慧設備、解決方案與服務提供者。全球每銷售8台筆記型電腦，就有1台來自聯寶。在全球商務筆電市佔率第一，是聯想全球最大PC研發和製造基地，更以捲軸螢幕、透明螢幕等創新產品榮獲CES、MWC等國際大獎。</div>
+        <a href="https://bit.ly/3a10C0A" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">瑞鼎科技股份有限公司</h3>
+          <span class="booth-tag">C7</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">瑞鼎科技股份有限公司(Raydium Semiconductor Corporation)成立於2003年10月，提供顯示器面板廠商完整解決方案的專業IC設計公司。專精於顯示器面板驅動IC、觸控IC的設計開發與銷售。產品廣泛應用於電視、顯示器、筆記型電腦、平板電腦、行動電話、車用與觸控裝置。</div>
+        <a href="https://www.104.com.tw/company/10zv3t2o" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">電機工程系</div><div class="tag">電子工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">景碩科技股份有限公司</h3>
+          <span class="booth-tag">C8</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">「景碩科技」成立於民國89年9月，為一上市公司，主要股東為和碩集團。員工逾6800人，主要從事IC封裝用之基板研發、製造與銷售。歡迎有志之士加入，參與公司之經營與成長！</div>
+        <a href="www.kinsus.com.tw" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">復盛應用科技股份有限公司</h3>
+          <span class="booth-tag">C10</span>
+        </div>
+        <div class="industry-tag">其他製造業</div>
+        <div class="scroll-content">我們是全球市佔率第一的高品質高爾夫球桿頭/球具OEM製造商。主要外銷世界各國高品質高爾夫球桿頭/球具，球棒，汽車/醫療/航太、精密工業等零件。在模具設計開發、精密鑄造鍛造製程、機器加工和成品組裝具備專業核心技術，並通過航太零件製造供應的合格製造商。</div>
+        <a href="https://www.104.com.tw/company/1a2x6bi0dd?jobsource=index_s_cs" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">機械工程系</div><div class="tag">資訊工程系</div><div class="tag">材料科學與工程研究所</div><div class="tag">材料及資源工程系</div><div class="tag">工業設計系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">士林電機廠股份有限公司</h3>
+          <span class="booth-tag">C11</span>
+        </div>
+        <div class="industry-tag">電力設備製造業</div>
+        <div class="scroll-content">士林電機隸屬於仰德集團，擁有 70 年製造與電力技術實力，產品廣泛應用於電子、公共工程、汽機車與生活家電等諸多領域，是支撐城市運作的關鍵力量。我們以「品質至上」為核心，提供從電力規劃到工控設備的 Total Solution，持續推動智慧製造與國際化發展。期待年輕人才加入，一起創造下一個 70 年。</div>
+        <a href="https://www.104.com.tw/company/52kin0w" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">環境工程與管理研究所</div><div class="tag">工業工程與管理系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">群光電能科技股份有限公司</h3>
+          <span class="booth-tag">C12</span>
+        </div>
+        <div class="industry-tag">其他電子零組件製造業</div>
+        <div class="scroll-content">1.群光電能(6412)為全球前3大電源供應器專業廠商，研發總部位於新北三重的「群光智慧綠能大樓」並榮獲亞太區智慧綠能建築最高榮譽「鉑金獎」2.生產基地設於大陸東莞、蘇州、重慶、廣盛南昌廠及泰國廠，全球員工總數超過10,000人。3.天下雜誌2024年公布2000大製造業排名第116名。</div>
+        <a href="https://www.chiconypower.com/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">資訊工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">群光電子股份有限公司</h3>
+          <span class="booth-tag">C13</span>
+        </div>
+        <div class="industry-tag">電腦及其週邊設備製造業</div>
+        <div class="scroll-content">群光電子主要從事從事電腦零組件產品的研發、製造與銷售，五大產品線包括輸入裝置產品、攜帶式鍵盤、視訊影像產品、相機鏡頭模組等，其中鍵盤、網路攝影機、筆電相機模組已成為全球領導廠商。除了列名為證交所「台灣中型一百指數成分股」，更被天下雜誌評選為2024年2000大製造業排名第47名。</div>
+        <a href="https://www.104.com.tw/company/9mjl874#info06" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">資訊工程系</div><div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">宏正自動科技股份有限公司</h3>
+          <span class="booth-tag">C14</span>
+        </div>
+        <div class="industry-tag">電腦及其週邊設備製造業</div>
+        <div class="scroll-content">ATEN 專注於存取與分享科技的連接與管理解決方案，將其產品與服務整合於單一品牌 ATEN，為全球客戶提供有效且一致性的服務。ATEN 將品牌深入推向國際，並將更多的連接解決方案提供到全世界。在科技與永續性間達成和諧，ATEN 以為更美好的世界努力不懈為目標。</div>
+        <a href="https://www.aten.com/tw/zh/human-resources-hq/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">資訊工程系</div><div class="tag">工業工程與管理系</div><div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">威盛電子股份有限公司</h3>
+          <span class="booth-tag">C15</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">智能解決方案
+ 汽車：威盛 Mobile360 系統和設備，使人工智能人員檢測及駕駛安全系統技術發揮功效
+ 邊緣：提供高度整合模組、電路板、入門套裝等，並將I/O和AI結合
+ 工業：在AIOT Edge上實現AI視覺檢測功能
+ 建築：全方位的智能門禁、影像對講機、門鈴和結合領先鏡頭及連接技術的警報系統</div>
+        <a href="https://www.104.com.tw/company/13womfgw?jobsource=index_s_cs" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">建準電機工業股份有限公司</h3>
+          <span class="booth-tag">C16</span>
+        </div>
+        <div class="industry-tag">其他電子零組件製造業</div>
+        <div class="scroll-content">建準電機創立於1980年，專注精密馬達、微型風扇與散熱模組研發製造，是電子產品不可或缺的散熱推手。透過精準氣流設計，確保系統穩定並延長產品壽命。技術廣泛應用於電腦通訊、工控、醫療、家電與居家通風等領域。建準以領先技術與全球 SUNON 商標，成為客戶信賴的散熱設計夥伴。歡迎勇於挑戰與創新的您加入！</div>
+        <a href="https://www.104.com.tw/company/11f0id7k?jobsource=google" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">長春集團</h3>
+          <span class="booth-tag">C17</span>
+        </div>
+        <div class="industry-tag">塑膠製品製造業</div>
+        <div class="scroll-content">長春集團旗下共有30多家公司，主要企業爲長春人造樹脂廠、長春石油化學及大連化學工業股份有限公司。集團事業除了上游的石化原料以及中、下游的合成樹脂、特用化學品、工程塑膠外，近年來更跨入電子化學品及電子材料行業領域。</div>
+        <a href="https://recruit.ccp.com.tw/job/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">化學工程與生物科技系</div><div class="tag">材料及資源工程系</div><div class="tag">資訊與財金管理系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">聯華電子股份有限公司</h3>
+          <span class="booth-tag">C18</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">聯華電子為全球半導體晶圓代工領導者，專注於邏輯及特殊技術，提供高品質積體電路製造服務。擁有十二座晶圓廠，遍及台灣、新加坡、中國、日本。聯電技術涵蓋邏輯、混合信號、高壓、嵌入式非揮發性記憶體、RFSOI及BCD，並提供專為5G、IoT、車用及邊緣AI設計的製程平台，月產能超過40萬片。</div>
+        <a href="https://careers.umc.com/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">資訊工程系</div><div class="tag">材料科學與工程研究所</div><div class="tag">化學工程與生物科技系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">科林研發股份有限公司</h3>
+          <span class="booth-tag">C20</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">科林研發創立於1980年，總部位於美國加州弗利蒙市，1984年於那斯達克股票上市，為全球頂尖半導體製程設備供應商，也是全球最大蝕刻製程設備供應商，並提供先進技術與服務給全球半導體業者，營運據點分佈在全球18個國家。</div>
+        <a href="https://www.104.com.tw/company/12noi188?jobsource=google" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">材料科學與工程研究所</div><div class="tag">化學工程與生物科技系</div><div class="tag">材料及資源工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">威聯通科技股份有限公司</h3>
+          <span class="booth-tag">C22</span>
+        </div>
+        <div class="industry-tag">通訊傳播設備製造業</div>
+        <div class="scroll-content">QNAP 的命名源自「高品質網路設備製造商」（Quality Network Appliance Provider），致力於軟體應用研發與硬體設計優化，並設立自有生產線，以提供全面且先進的科技解決方案。QNAP 專注於儲存、網通及智慧視訊產品的創新，持續引領業界科技發展。</div>
+        <a href="https://www.qnap.com/zh-tw/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">資訊工程系</div><div class="tag">工業工程與管理系</div><div class="tag">智慧財產權研究所</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">億光電子工業股份有限公司</h3>
+          <span class="booth-tag">C25</span>
+        </div>
+        <div class="industry-tag">光電材料及元件製造業</div>
+        <div class="scroll-content">億光電子成立於1983年，深耕LED超過40年，整合研發與市場資源，提供全方位光電解決方案。產品線完整，全球市占率名列前五。</div>
+        <a href="https://www.everlight.com/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">材料科學與工程研究所</div><div class="tag">化學工程與生物科技系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">啓碁科技股份有限公司</h3>
+          <span class="booth-tag">C27</span>
+        </div>
+        <div class="industry-tag">通訊機械器材相關業</div>
+        <div class="scroll-content">啓碁科技創立於1996年，專精於通訊產品的設計、研發與製造，提供RF天線設計、軟硬體設計、機構設計、系統整合、介面開發、產品測試與認證等完整的技術支援。全球總部位於台灣新竹科學園區，在北美洲、歐洲、亞洲等地均設有服務或製造據點，提供全方位解決方案與在地服務支援。</div>
+        <a href="https://www.wnc.com.tw/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">資訊工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">玉晶光電股份有限公司</h3>
+          <span class="booth-tag">C28</span>
+        </div>
+        <div class="industry-tag">光學儀器及設備製造業</div>
+        <div class="scroll-content">玉晶光電致力於最先進光學技術的創新與鏡頭產品開發。
+ 我們提供從光學設計、設備工藝到製造的垂直整合全方位服務，確保高品質與高效能。
+ 產品線涵蓋AR/VR、AI 眼鏡、手機鏡頭、車載、醫療及機器人等多元前瞻應用，持續引領光學產業未來，是世界級客戶信賴的關鍵夥伴。</div>
+        <a href="https://www.gseo.com/tw" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">資訊工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">台灣大哥大股份有限公司</h3>
+          <span class="booth-tag">C29</span>
+        </div>
+        <div class="industry-tag">通訊傳播設備製造業</div>
+        <div class="scroll-content">台灣大哥大以「T.I.M.E」四面向多角化經營，以「超5G策略」擴大競爭力，期許以最創新及優質的服務品質，帶給消費者美好的智慧生活體驗，並以創新研發能力全面投入AI應用，為客戶創造最佳使用經驗，將科技應用延伸至永續實踐，為社會大眾創造最大價值。</div>
+        <a href="https://twm5g.co/EBMg" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">資訊與財金管理系</div><div class="tag">經營管理系</div><div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">宜特科技股份有限公司</h3>
+          <span class="booth-tag">C30</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">宜特科技為IEC/IECQ、TUV NORD等國際公信力機構認可的頂尖第三方公正實驗室，提供故障分析FA、可靠度驗證RA、材料分析MA、化學/製程微汙染分析、訊號測試服務。針對AI和5G產品、太空衛星驗證、高速傳輸訊號測試、半導體先進製程與封裝驗證、車用電子驗證及物聯網/車聯網，提供全方位整合方案。</div>
+        <a href="http://www.istgroup.com/tw" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">化學工程與生物科技系</div><div class="tag">材料及資源工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">欣興電子股份有限公司</h3>
+          <span class="booth-tag">C31</span>
+        </div>
+        <div class="industry-tag">其他電子零組件製造業</div>
+        <div class="scroll-content">成立於1990年，是積體電路板的IC Carrier及印刷電路板PCB的世界級供應商。創新與品質為欣興的競爭力來源，多年來持續突破技術並在全球快速擴張。</div>
+        <a href="http://www.unimicron.com" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">大立光電股份有限公司</h3>
+          <span class="booth-tag">C32</span>
+        </div>
+        <div class="industry-tag">光學儀器及設備製造業</div>
+        <div class="scroll-content">1987年成立，總部坐落於台中市南屯區精密機械園區, 員工人數約為8,400人。
+ 研發與製造精密光學塑膠鏡頭，產品廣泛應用於手機、平板、筆電、汽車...等。
+ 廠區位於台中工業區、精密機械園區，現共有10座廠區及2座新建中廠區。</div>
+        <a href="https://www.104.com.tw/company/absj6xs#intro" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">資訊工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">嘉晶電子股份有限公司</h3>
+          <span class="booth-tag">C33</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">嘉晶電子位於新竹科學園區，是國內唯一同時量產GaN與SiC磊晶的廠商。公司專注矽晶及第三代半導體的研發製造，產品廣泛應用於分離元件與高性能積體電路。嘉晶以次世代材料GaN、SiC技術打造差異化優勢，積極布局未來5G、電動車、物聯網等市場，滿足電子產業對高效能的轉換需求，持續開拓半導體藍海市場。</div>
+        <a href="https://www.epi.episil.com/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">資訊工程系</div><div class="tag">化學工程與生物科技系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">台灣檢驗科技股份有限公司</h3>
+          <span class="booth-tag">C34</span>
+        </div>
+        <div class="industry-tag">電腦及其週邊設備製造業</div>
+        <div class="scroll-content">SGS 成立於 1878 年，為全球測試、驗證與檢驗服務的領導者。1952 年在台設立，深耕第 74 年，擁有逾4,000名專業人員。自2024年起連續兩年入選《TIME》雜誌「全球最具永續發展公司」，並榮獲 TIC 產業第一名，展現卓越的專業與永續影響力。</div>
+        <a href="https://www.104.com.tw/company/azqe3aw?keyword=%E5%88%86%E6%9E%90&page=1&pageSize=20&order=8&asc=0&jobsource=index_job_c" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">環境工程與管理研究所</div><div class="tag">化學工程與生物科技系</div><div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">鴻準精密工業股份有限公司</h3>
+          <span class="booth-tag">C35</span>
+        </div>
+        <div class="industry-tag">電腦及其週邊設備製造業</div>
+        <div class="scroll-content">鴻準產品涵蓋3C電子產品系統組裝及電子產品機構零組件之製造、加工、銷售等，提供客戶完整設計、快速製造的支持。
+ 經營策略上，發展與業界領導廠商的策略聯盟關係，除持續深耕系統組裝及金屬機殼領域，現朝向邊緣AI、電動車、機器人、5G與伺服器等領域發展，積極擴充生產能力，嚴密控制品質，及發展全球運籌能力。</div>
+        <a href="https://www.foxconntech.com.tw/index/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">機械工程系</div><div class="tag">車輛工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">工業工程與管理系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">英屬維京群島商祥茂光電科技股份有限公司台灣分公司</h3>
+          <span class="booth-tag">C36</span>
+        </div>
+        <div class="industry-tag">光電材料及元件製造業</div>
+        <div class="scroll-content">AOI是分子束磊晶(MBE)製程的專業設計製造商中的領導者，擁有全球第一流的客戶群，超過300個客戶，分佈在26個國家，全球化的生產線基地，半導體生產線座落於美國休士頓，非晶圓級的生產組裝線分佈在德州/美國，臺北/臺灣，寧波/中國，全球三地約2000名員工。</div>
+        <a href="https://www.104.com.tw/company/d1uwq80?jobsource=google" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">材料科學與工程研究所</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">大陸工程股份有限公司</h3>
+          <span class="booth-tag">C37</span>
+        </div>
+        <div class="industry-tag">營造業</div>
+        <div class="scroll-content">大陸工程以優異的工程實績在公共及私人工程領域均享有盛名。80年的實力與創新更為大陸工程贏得口碑，成為台灣工程營建業的領導品牌。大陸工程完成許多卓越的大型基礎建設包括國道、捷運及鐵路建設等。大陸工程在建築工程也有卓著成績，工程實績包括醫院、飯店、商辦、高端住宅、社會住宅等專案。</div>
+        <a href="https://www.104.com.tw/company/f639cgo?jobsource=company_job" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">能源與冷凍空調工程系</div><div class="tag">電機工程系</div><div class="tag">土木工程系</div><div class="tag">環境工程與管理研究所</div><div class="tag">建築系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">頎邦科技股份有限公司</h3>
+          <span class="booth-tag">C38</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">頎邦科技具備覆晶封裝與CSP先進技術，並投入凸塊製程代工，為國內成長最快的凸塊廠商。公司以自研金凸塊、錫鉛凸塊、COF與晶圓級封裝技術量產，提供完整Total Solution，並持續強化無電電鍍、無鉛等製程，結合研發機構與國際大廠合作，擴大產品線與全方位封裝能力，以提升競爭優勢與市場影響力地位。</div>
+        <a href="https://www.104.com.tw/company/7ere2lk?jobsource=index_s_cs" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">資訊工程系</div><div class="tag">材料科學與工程研究所</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">明緯企業股份有限公司</h3>
+          <span class="booth-tag">C39</span>
+        </div>
+        <div class="industry-tag">其他電子零組件製造業</div>
+        <div class="scroll-content">明緯公司成立於西元1982年，是全球少數以標準品電源供應器為主業的專業製造商。在2024年已成為合併營收達10.22億美金以上的專業電源品牌製造商，全球總部位於台灣新北產業園區，在中國廣州、深圳、蘇州、美國加州及歐洲荷蘭設有分公司及辦事處，全球員工人數達2500人。</div>
+        <a href="https://www.104.com.tw/company/fuf3fso#info06" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">電機工程系</div><div class="tag">電子工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">康舒科技股份有限公司</h3>
+          <span class="booth-tag">C40</span>
+        </div>
+        <div class="industry-tag">其他電子零組件製造業</div>
+        <div class="scroll-content">康舒科技專注開發高效能源解決方案，提升系統性能與延長設備壽命。四十多年來，引領電源設計創新，其解決方案為全球 IT 設備、電動車、充電基礎設施、智慧綠能服務提供穩定且環境友善的動力，積極促進環境永續發展。總部設於台灣，業務覆蓋全球，秉持對創新與環境責任的承諾，致力於為客戶及整個社會打造更綠色的未來。</div>
+        <a href="https://www.104.com.tw/company/5o3jjw8#intro" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">資訊工程系</div><div class="tag">工業工程與管理系</div><div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">一零四資訊科技股份有限公司</h3>
+          <span class="booth-tag">C42</span>
+        </div>
+        <div class="industry-tag">網際網路相關業</div>
+        <div class="scroll-content">1996年由楊基寬先生創辦，為企業及個人提供現代化、系統化、人性化的求職求才服務。 
+ 以C.M.O.S.A.五大核心概念（ cloud 雲端、mobile 行動、open 開放、social 社群、A.I.人工智慧）步入第二代104，在多元職涯與多元人資的既有基礎上，優化廣度服務，滿足深層需求。</div>
+        <a href="https://www.104.com.tw/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">晶睿通訊股份有限公司</h3>
+          <span class="booth-tag">C44</span>
+        </div>
+        <div class="industry-tag">通訊傳播設備製造業</div>
+        <div class="scroll-content">晶睿通訊（3454）成立於2000年，為全球安全監控解決方案領導品牌，以自有品牌 VIVOTEK 行銷全球，產品涵蓋網路攝影機、影像儲存設備與管理軟體。總部位於新北市中和區，在美洲、歐洲、印度、中東、拉丁美洲及日本設有據點，致力成為「物聯網的眼睛」。</div>
+        <a href="https://www.104.com.tw/company/whb9w2w?jobsource=google" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">資訊工程系</div><div class="tag">資訊與財金管理系</div><div class="tag">經營管理系</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div id="zone-D" class="zone-section">
+  <div class="section-title">D區</div>
+  <div class="card-grid">
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">緯創資通股份有限公司</h3>
+          <span class="booth-tag">D1</span>
+        </div>
+        <div class="industry-tag">電腦及其週邊設備製造業</div>
+        <div class="scroll-content">緯創資通專注於資通訊產品，提供客製化產品開發及服務，為ICT產業全球領導廠商。全球超過8萬名員工。 業務涵蓋科技產品設計研發、生產製造與客戶服務，發展5G通訊、AIoT技術、專業顯示技術，結合工業物聯網與數位轉型等前瞻性發展，深耕智慧交通、智慧製造、智慧家庭及智慧醫療。</div>
+        <a href="https://jobs.wistron.com/career/zh-tw/recriting-program/1?site=hq&lang=zh-tw" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">資訊工程系</div><div class="tag">土木工程系</div><div class="tag">工業工程與管理系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">全球傳動科技股份有限公司</h3>
+          <span class="booth-tag">D2</span>
+        </div>
+        <div class="industry-tag">機械設備製造業</div>
+        <div class="scroll-content">全球傳動(TBI MOTION)為台灣傳動元件專業製造廠，TBI MOTION掌握關鍵核心技術，專注創新研發與設計，擁有多項產品設計專利並且通過ISO9001、ISO14001、ISO45001認證，1986年成立至今，經銷營業據點分佈全球，『品質保證、供貨穩定』，廣獲各國客戶的肯定。</div>
+        <a href="https://www.104.com.tw/company/dee6w3s?jobsource=google" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">資訊工程系</div><div class="tag">工業工程與管理系</div><div class="tag">經營管理系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">正文科技股份有限公司</h3>
+          <span class="booth-tag">D3</span>
+        </div>
+        <div class="industry-tag">通訊傳播設備製造業</div>
+        <div class="scroll-content">正文科技(股票代號4906)為目前國內無線網通之領導廠商，成立於1988年，長期致力於無線技術的耕耘，為世界一流的無線區域網路完整解決方案的提供者，擁有一支在無線通訊領域經驗豐富及能力優越的研發團隊，是國內少數同時掌握無線區域網路及寬頻網路關鍵技術之廠商。</div>
+        <a href="https://www.104.com.tw/company/ajq4pyw?jobsource=index_s_cs" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">資訊工程系</div><div class="tag">資源工程研究所</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">神通資訊科技股份有限公司</h3>
+          <span class="booth-tag">D4</span>
+        </div>
+        <div class="industry-tag">電腦及其週邊設備製造業</div>
+        <div class="scroll-content">神通資訊科技股份有限公司於 2010 年 10 月正式成立,傳承中華民國第一家引進微電腦系統的電腦公司─神通電腦推廣微電腦設計與應用的精神,致力於提供整體解決方案與一站完整服務。營業範圍涵蓋系統整合、自動化設計製造、技術諮詢與售後服務等,透過系統發展與資通訊技術整合能力,改善客戶生產力與工作效率。</div>
+        <a href="https://www.mitac.com.tw/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">資訊工程系</div><div class="tag">資訊與財金管理系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">台灣穗高科技股份有限公司</h3>
+          <span class="booth-tag">D5</span>
+        </div>
+        <div class="industry-tag">其他製造業</div>
+        <div class="scroll-content">台灣穗高科技自2002年設廠以來，致力於高品質鋁擠錠及精密擠型材之生產，為世界頂級鋁合金材料製造供應商，以『堅持在絕對安全的前提下，生產品質穩定的頂級材料』，主要供應高品質之鋁材予航太科技、汽機車、運動休閒、消費性電子等相關產業。</div>
+        <a href="https://www.104.com.tw/company/10wt0xhs?jobsource=google" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">車輛工程系</div><div class="tag">電機工程系</div><div class="tag">材料科學與工程研究所</div><div class="tag">材料及資源工程系</div><div class="tag">工業工程與管理系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">町洋集團</h3>
+          <span class="booth-tag">D6</span>
+        </div>
+        <div class="industry-tag">其他電子零組件製造業</div>
+        <div class="scroll-content">町洋集團創立於1983年，主要開發製造各式端子台及配件，是全球主要專業接線端子製造公司。總部位於台灣，在全球設有貿易與服務機構，亦設立研發中心。
+ 產品廣泛用於六大工業領域，包括生產自動化、過程自動化、電力自動化、軌道交通、替代能源及產業設備製造等，豐富行業經驗與專業技術，重視人才培育、推動技術創新。</div>
+        <a href="https://www.104.com.tw/company/fvqaljs?jobsource=cs_2018indexpoc" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">資訊工程系</div><div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">新光合成纖維股份有限公司</h3>
+          <span class="booth-tag">D7</span>
+        </div>
+        <div class="industry-tag">化學材料製造業</div>
+        <div class="scroll-content">新光合纖為在地深耕超過50年之上市公司，海外據點包括泰國與中國揚州。新光合纖主要有化纖與塑膠兩大事業群：化纖事業群產品包括聚酯粒、加工絲、彈性纖維及工業用紗，廣泛應用於車用、工業及機能性纖維等領域；塑膠事業群產品包括瓶用酯粒、工程塑膠、膠片及寶特瓶用原料等，用於電子、通訊、電動車及醫療等產業。</div>
+        <a href="https://www.104.com.tw/company/3eyww3c#info06" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">分子科學與工程系</div><div class="tag">材料科學與工程研究所</div><div class="tag">化學工程與生物科技系</div><div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">復盛公司</h3>
+          <span class="booth-tag">D8</span>
+        </div>
+        <div class="industry-tag">機械設備製造業</div>
+        <div class="scroll-content">自1953年起，始終保持追求卓越、豐富人生的精神，注入每一個角落深處，每一個復盛人都是企業存續關鍵。公司主要產品為空氣&冷媒壓縮機，在業內具有舉足輕重地位，版圖跨足亞、歐、美，近年來更於東南亞快速成長，致力提供高品質高效能產品。誠摯邀請您加入團隊，一同開拓行業、實現個人和團隊成長，讓我們一起開創未來</div>
+        <a href="https://tw.fusheng.com/zh-tw/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">機械工程系</div><div class="tag">車輛工程系</div><div class="tag">能源與冷凍空調工程系</div><div class="tag">電機工程系</div><div class="tag">太空系統工程研究所</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">互助營造股份有限公司</h3>
+          <span class="booth-tag">D9</span>
+        </div>
+        <div class="industry-tag">營造業</div>
+        <div class="scroll-content">「互助營造」創設於民國 38年，專營營造工程及其相關工作之服務。「互助營造」的命名，緣於創辦人領悟一則做人做事的基本哲理-「互助的結果是互惠」，幫忙別人即是幫助自己，基於此一哲理和努力，互助營造的工程實績遍佈全省。</div>
+        <a href="https://www.futsu.com.tw/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">土木工程系</div><div class="tag">建築系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">家登精密工業股份有限公司</h3>
+          <span class="booth-tag">D10</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">家登精密(3680)自1998年創立以來，專注自主技術研發，致力成為全球頂尖半導體製造廠不可或缺的供應商。公司聚焦利基型市場，產品具獨特優勢，並凝聚一群對技術充滿熱情、勇於追夢的夥伴，共同推動半導體黃光微影技術進步。</div>
+        <a href="https://www.104.com.tw/company/7jbxn20?jobsource=bing" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">資訊工程系</div><div class="tag">材料科學與工程研究所</div><div class="tag">化學工程與生物科技系</div><div class="tag">工業工程與管理系</div><div class="tag">工業設計系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">西門子股份有限公司 SIEMENS</h3>
+          <span class="booth-tag">D11</span>
+        </div>
+        <div class="industry-tag">機械設備製造業</div>
+        <div class="scroll-content">西門子創立逾170年，是全球領先的科技企業，專注智慧基礎設施、能源系統及製造業自動化與數位化。自1955年進入台灣、1989年正式成立以來，長期與在地企業合作推動產業升級。西門子設備供應全台約20%電力，協助台北101提升能源效率，並為半導體等產業提供自動化方案，助力台灣工業4.0發展。</div>
+        <a href="https://www.104.com.tw/company/at369u8?jobsource=n_my104_search" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">機械工程系</div><div class="tag">能源與冷凍空調工程系</div><div class="tag">電機工程系</div><div class="tag">工業工程與管理系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">奇鋐科技股份有限公司</h3>
+          <span class="booth-tag">D12</span>
+        </div>
+        <div class="industry-tag">電腦及其週邊設備製造業</div>
+        <div class="scroll-content">公司主要產品為CPU散熱器、散熱片、風扇、筆電散熱模組、熱交換器、石墨、熱管/均熱板、水冷散熱器、水冷板、桌上型電腦機殼及一體機(AIO)與伺服器等系統組裝產品，主要係用於通訊/網路、電力/能源、交通運輸、伺服器、個人電腦及智慧型手機等行動裝置等。</div>
+        <a href="https://www.avc.co/zh-tw/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">車輛工程系</div><div class="tag">能源與冷凍空調工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">工業工程與管理系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">微星科技股份有限公司</h3>
+          <span class="booth-tag">D13</span>
+        </div>
+        <div class="industry-tag">電腦及其週邊設備製造業</div>
+        <div class="scroll-content">全球電競領域的領導品牌，微星科技是遊戲及電競業界最值得信賴的名字。我們投入無數的時間和龐大的資源，給予電競產業社群中有抱負及優秀的玩家們一個堅強的後盾，同時也將他們的專業知識和技能反饋在產品上。微星科技就是True Gaming! 是真正唯一的電競品牌。</div>
+        <a href="http://www.msi.com" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">資訊工程系</div><div class="tag">工業工程與管理系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">臺灣永光化學工業股份有限公司</h3>
+          <span class="booth-tag">D15</span>
+        </div>
+        <div class="industry-tag">化學材料製造業</div>
+        <div class="scroll-content">永光化學創立於1972年，以「正派經營，愛心管理」為文化核心，以永續經營為使命，致力研發、生產對人類有正面價值的高科技化學品。
+ 永光化學於1988年股票上市，其後積極挑戰高科技，擁有色料化學、特用化學、碳粉、電子化學、醫藥化學等五大事業的「高科技化學企業集團」。</div>
+        <a href="https://www.104.com.tw/company/73nkc7s?jobsource=google" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">分子科學與工程系</div><div class="tag">材料科學與工程研究所</div><div class="tag">化學工程與生物科技系</div><div class="tag">材料及資源工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">廣達電腦股份有限公司</h3>
+          <span class="booth-tag">D16</span>
+        </div>
+        <div class="industry-tag">電腦及其週邊設備製造業</div>
+        <div class="scroll-content">廣達電腦成立於1988年，為全球Fortune 500 大公司之一，也是全球筆記型電腦專業研發設計製造的領導廠商。從全球最大的筆電設計製造跨足到雲端，持續創新並積極進行AI與5G布局，涉足智慧家庭、智慧醫療、智慧交通及智慧製造，廣達最珍貴的資產「人才」將是未來再創新局的關鍵！</div>
+        <a href="https://hr.quantatw.com" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">能源與冷凍空調工程系</div><div class="tag">電機工程系</div><div class="tag">資訊工程系</div><div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">旺矽科技股份有限公司</h3>
+          <span class="booth-tag">D17</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">旺矽科技創立於1995年7月，以客戶導向的核心經營理念、不斷開發最新科技及尖端製造技術，提供客戶最佳產品及服務，產品跨越多領域產業，主要產品市場包括探針卡測試方案、LED及光電測試解決方案、高低溫測試系統、先進半導體測試解決方案等。</div>
+        <a href="https://www.104.com.tw/company/156ljehc?jobsource=bing" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">資訊工程系</div><div class="tag">工業工程與管理系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">裕隆汽車製造股份有限公司</h3>
+          <span class="booth-tag">D18</span>
+        </div>
+        <div class="industry-tag">汽車及其零件製造業</div>
+        <div class="scroll-content">本公司主要生產製造NISSAN、LUXGEN等品牌各式轎車、休旅車及商用車，同時提供各種汽車及其相關原物料、零組件及其他機件等之製造銷售、代辦汽車檢驗業務；儲能櫃製造、專業電池製造、電池系統委測、馬達動力系統委測、電池模組、雷射焊接代工等服務。</div>
+        <a href="https://www.yulon-motor.com.tw/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">車輛工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">資訊工程系</div><div class="tag">資訊與財金管理系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">台灣世曦工程顧問股份有限公司</h3>
+          <span class="booth-tag">D19</span>
+        </div>
+        <div class="industry-tag">營造業</div>
+        <div class="scroll-content">台灣世曦工程顧問股份有限公司承襲自財團法人中華顧問工程司的優良傳統、技術與經驗，參與國內外重大工程，範圍涵蓋交通、公路、鐵路、橋梁、隧道、港埠、機場、捷運、BOT、水利、電機、機械、資訊、交通控制、通訊、都市計畫、土開、建築、環保等，各工程領域人才薈萃，是國內最大的綜合型工程顧問機構。</div>
+        <a href="https://www.ceci.com.tw/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">能源與冷凍空調工程系</div><div class="tag">電機工程系</div><div class="tag">資訊工程系</div><div class="tag">土木工程系</div><div class="tag">建築系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">台耀化學股份有限公司</h3>
+          <span class="booth-tag">D20</span>
+        </div>
+        <div class="industry-tag">藥品及醫用化學製品製造業</div>
+        <div class="scroll-content">台耀化學於1995年以委託實驗室的形式成立,2000年踏入原料藥生產的領域。公司位於桃園蘆竹,擁有員工人數九百多人,廠區有多種類的廠房設備,擁有數十項原料藥產品,同時提供CDMO 服務與ADCs開發製造。2018年跨足針劑領域,提供細胞毒性及非細胞毒性之無菌針劑充填及凍乾針劑藥品一站式垂直整合服務。</div>
+        <a href="https://www.104.com.tw/company/18ix85rk?jobsource=index_s_cs" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">分子科學與工程系</div><div class="tag">化學工程與生物科技系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">明基材料股份有限公司</h3>
+          <span class="booth-tag">D21</span>
+        </div>
+        <div class="industry-tag">化學材料製造業</div>
+        <div class="scroll-content">明基材料秉持著「創新無所不在」的理念，持續開發材料科學產品，以材料科學為基礎堅持自主研發，擁有光學多層膜設計、高分子合成2大材料技術；卷對卷、精密雕刻、精密塗布、射出押出等4大製程技術，提供客戶高質化及完整解決方案。</div>
+        <a href="https://www.104.com.tw/company/7lpb6fk" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">光電工程系</div><div class="tag">分子科學與工程系</div><div class="tag">材料科學與工程研究所</div><div class="tag">化學工程與生物科技系</div><div class="tag">工業工程與管理系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">南寶樹脂化學工廠股份有限公司</h3>
+          <span class="booth-tag">D22</span>
+        </div>
+        <div class="industry-tag">化學材料製造業</div>
+        <div class="scroll-content">南寳樹脂為一流的接著劑與特用化學品製造商，提供先進製程和高品質產品及服務，貼近客戶需求並提供全面性的解決方案是我們的最大優勢，使客戶產品搶先在市場中取得先機。</div>
+        <a href="https://www.104.com.tw/company/y3m7lj4" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">電機工程系</div><div class="tag">資訊工程系</div><div class="tag">分子科學與工程系</div><div class="tag">材料科學與工程研究所</div><div class="tag">化學工程與生物科技系</div><div class="tag">材料及資源工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">國家太空中心</h3>
+          <span class="booth-tag">D23</span>
+        </div>
+        <div class="industry-tag">其他製造業</div>
+        <div class="scroll-content">About TASA
+ 國家太空中心是臺灣負責太空事務的專責單位，發展太空科技、推動太空產業等。
+ 
+ 成立於1991年於2023年起改制為行政法人。
+ 
+ TASA執行過的衛星計畫，包含福爾摩沙衛星一號、二號、三號、五號、七號及獵風者衛星。
+ 
+ 展望未來，TASA另啟動福衛八號光學遙測衛星星系計畫等等</div>
+        <a href="https://www.tasa.org.tw/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">光電工程系</div><div class="tag">資訊工程系</div><div class="tag">太空系統工程研究所</div><div class="tag">不限科系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">固緯電子實業股份有限公司</h3>
+          <span class="booth-tag">D24</span>
+        </div>
+        <div class="industry-tag">其他製造業</div>
+        <div class="scroll-content">台灣成立最早，最具規模之綜合儀器廠。以GWINSTEK自有品牌行銷全世界，海外設有7個子公司及全球80餘國200多家經銷商。建構全球生產分工機制，強化全員品牌管理，塑造明確品牌定位，提升公司品牌價值，進而提供最高客戶價值的電子測試儀器，以對電子科技及電子相關產業之發展做出最佳貢獻。</div>
+        <a href="www.gwinstek.com" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">電機工程系</div><div class="tag">電子工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">台康生技股份有限公司</h3>
+          <span class="booth-tag">D25</span>
+        </div>
+        <div class="industry-tag">藥品及醫用化學製品製造業</div>
+        <div class="scroll-content">台康生技由經濟部、生技中心與台耀化學共同成立，承接生技中心先導工廠技術，專注蛋白質生物藥開發與製造。營運兩座通過TFDA認證的動物細胞與微生物cGMP廠房。具備300-500L細胞培養、20-100L微生物醱酵設備，並與國際CDMO合作，打造世界級製造能量。</div>
+        <a href="https://zh-tw.eirgenix.com/" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">化學工程與生物科技系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">麗明營造股份有限公司</h3>
+          <span class="booth-tag">D26</span>
+        </div>
+        <div class="industry-tag">營造業</div>
+        <div class="scroll-content">麗明營造成立於1994年，總公司設於台中市七期，為國內大型綜合營造廠之一。麗明營造於2024年天下雜誌2000大服務業排名第104名，工程承攬類排名第7名，年營業收入新台幣218.10億元。不管在公共工程、廠辦、量販店、學校、飯店等類型個案皆取得相當優異之表現。知名建案代表：台中歌劇院、故宮南院等。</div>
+        <a href="https://www.104.com.tw/company/rp2ri74" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">土木工程系</div><div class="tag">建築系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">春源鋼鐵工業股份有限公司</h3>
+          <span class="booth-tag">D27</span>
+        </div>
+        <div class="industry-tag">其他製造業</div>
+        <div class="scroll-content">由裁剪到營建、基礎鋼板到鋼構建築，春源秉持「誠意、信心、勤勉、負責」的態度做好每一件事，並致力於人員的教育訓練，確保員工的專業度與成長性。
+ 企業使命是「使客戶得到尊重、服務與滿足」。我們期許達到讓客戶利益極大化的雙贏成果，為客戶創造更多價值，這是春源立足鋼鐵業數十年來不變的精神與價值。</div>
+        <a href="https://goo.gl/1nTsci" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">土木工程系</div><div class="tag">材料及資源工程系</div><div class="tag">工業工程與管理系</div><div class="tag">建築系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">春原營造股份有限公司</h3>
+          <span class="booth-tag">D28</span>
+        </div>
+        <div class="industry-tag">營造業</div>
+        <div class="scroll-content">創立於民國六十六年（西元1977年），為一專業於建築、土木之甲級營造公司,係為春源鋼鐵公司轉投資公司。
+ 
+ 我們『品質政策』心地願景
+ ”品質“涵蓋產品、管理、員工心志之品質
+ 以開闊之心志，求取管理及績效提升，
+ 以嚴謹之心志，求取工程品質之確保。</div>
+        <a href="https://www.104.com.tw/company/5kq0j4g?jobsource=google" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">土木工程系</div><div class="tag">建築系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">虹冠電子工業股份有限公司</h3>
+          <span class="booth-tag">D29</span>
+        </div>
+        <div class="industry-tag">其他電子零組件製造業</div>
+        <div class="scroll-content">本公司成立於 87 年 12 月30 日，資本額 6 億 ，100 年 3 月 21 日 已以科技事業正式上市，為專業高功率IC之研發、製造及銷售，致力於高功率AC-DC（交流轉直流）整合型電源管理IC，並推出具節省電力及高效能功率IC，其產品主要應用在桌上型電腦、雲端伺服器及LED顯示器等產品。</div>
+        <a href="https://www.104.com.tw/company/7ermtew?jobsource=google" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">電機工程系</div><div class="tag">電子工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">鼎翰科技股份有限公司</h3>
+          <span class="booth-tag">D30</span>
+        </div>
+        <div class="industry-tag">電腦及其週邊設備製造業</div>
+        <div class="scroll-content">鼎翰科技（TSC Auto ID）是全球領先的自動識別、數據擷取與標籤列印技術供應商。成立於1991年，擁有ISO認證的生產基地，業務涵蓋全球逾百國。作為熱感式列印技術的先驅，鼎翰科技推動現代列印編程語言的發展，並以創新驅動的策略，成為全球領導品牌。</div>
+        <a href="https://www.104.com.tw/company/d5edmu8?jobsource=google" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">光電工程系</div><div class="tag">資訊工程系</div><div class="tag">資源工程研究所</div><div class="tag">經營管理系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">工信工程股份有限公司</h3>
+          <span class="booth-tag">D31</span>
+        </div>
+        <div class="industry-tag">營造業</div>
+        <div class="scroll-content">本公司成立近70年，為國內歷史悠久且上市之大型營造廠商，曾多次獲政府評選為優良廠商。主要承攬道路、橋梁、隧道、機場、捷運等土木及建築工程，工程遍及全台。公司通過ISO 9000、ISO 14000及OHSAS 18001/CNS 15506等管理系統驗證，具備豐富經驗與良好信譽。</div>
+        <a href="https://www.kseco.com.tw/tc/index.aspx" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">土木工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">尼克森微電子股份有限公司</h3>
+          <span class="booth-tag">D32</span>
+        </div>
+        <div class="industry-tag">半導體製造業</div>
+        <div class="scroll-content">NIKO-SEM微電子成立於1998年，為專業從事電源管理功率元件與功率模組設計的公司。主要產品涵蓋Power MOSFET功率元件、寬能隙半導體元件，以及SiC功率模組，廣泛應用於主機板、筆記型電腦、平板電腦等產品及其週邊電源裝置，並拓展至無人機、車用電子、機器人以及AI伺服器等多元產業領域。</div>
+        <a href="https://www.niko-sem.com/index.php" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">電機工程系</div><div class="tag">電子工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">富采光電股份有限公司</h3>
+          <span class="booth-tag">D33</span>
+        </div>
+        <div class="industry-tag">光電材料及元件製造業</div>
+        <div class="scroll-content">富采光電（原晶元光電，現為富采控股（3714.TW）旗下公司）是一家全方位光電整合解決方案供應商，專注於三五族化合物半導體的技術研發與製造。 公司業務涵蓋從磊晶、晶粒到封裝模組的完整產業鏈，並透過「雙加值引擎」策略，聚焦車用、先進顯示、智能感測及光通訊等高附加價值應用。</div>
+        <a href="https://www.ennostar.com/?lang=tw" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">資訊工程系</div><div class="tag">材料科學與工程研究所</div><div class="tag">化學工程與生物科技系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">新日興股份有限公司</h3>
+          <span class="booth-tag">D34</span>
+        </div>
+        <div class="industry-tag">電腦及其週邊設備製造業</div>
+        <div class="scroll-content">新日興（股票代號3376），創立於1965年，主要產品為樞紐組件、MIM 金屬射出成型與精密加工產品的研發與製造，是全球筆電軸承與精密零件的重要供應商。憑藉技術與製程優勢，新日興持續強化研發能量與全球專利布局，提升國際競爭力。誠摯敬邀加入新日興團隊，共創事業高峰。</div>
+        <a href="https://www.104.com.tw/company/g9uktns?jobsource=google" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">機械工程系</div><div class="tag">車輛工程系</div><div class="tag">電機工程系</div><div class="tag">材料科學與工程研究所</div><div class="tag">工業工程與管理系</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div id="zone-E" class="zone-section">
+  <div class="section-title">E區</div>
+  <div class="card-grid">
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">台達電子工業股份有限公司</h3>
+          <span class="booth-tag">E1</span>
+        </div>
+        <div class="industry-tag">其他電子零組件製造業</div>
+        <div class="scroll-content">台達創立於 1971 年，為全球電源管理與散熱解決方案的領導廠商。台達秉持「環保 節能 愛地球」的經營使命，持續開發創新節能產品及解決方案。近年來，台達已逐步從關鍵零組件製造商邁入整體節能解決方案提供者，深耕「電源及零組件」、「交通」、「自動化」與「基礎設施」四大事業範疇。</div>
+        <a href="https://www.104.com.tw/company/fn5mtmo?jobsource=bing" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">自動化科技研究所</div><div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">光電工程系</div><div class="tag">資訊工程系</div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h3 class="company-title" style="font-size:20px;margin:0;">遠東金士頓科技</h3>
+          <span class="booth-tag">E2</span>
+        </div>
+        <div class="industry-tag">被動電子元件製造業</div>
+        <div class="scroll-content">總部位於美國加州的Kingston，創立於1987年，為全球記憶體與儲存領導品牌。長踞《富比士》（Forbes）「美國最大私人公司」排行榜前30名，連年蟬聯 SSD 通路市佔第一、並稱霸全球 DRAM 記憶體市場。產品涵蓋記憶體模組、記憶卡、USB隨身碟、SSD固態硬碟…等之研發、製造及銷售。</div>
+        <a href="https://www.kingston.com/tw" target="_blank" class="website-button">🔗 企業網站</a>
+        <div style="margin-top:10px;">
+          <div class="tag">機械工程系</div><div class="tag">電機工程系</div><div class="tag">電子工程系</div><div class="tag">資訊工程系</div><div class="tag">材料及資源工程系</div><div class="tag">工業工程與管理系</div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<a href="#top" class="top-btn">▲ 回到頂部</a>
+
+<script>
+  function showZone(zone) {
+    document.querySelectorAll('.zone-section').forEach(s => s.classList.remove('active'));
+    document.getElementById('zone-' + zone).classList.add('active');
+  }
+</script>
+
+</body>
+</html>
